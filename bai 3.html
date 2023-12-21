@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai 3</title>
+</head>
+
+<body>
+    <script>
+        let number = +prompt("Hãy nhập vào một số nguyên dương n (n<=100):");
+        let soNguyenDuong = [];
+
+        if (number <= 100 && number > 0) {
+            for (let i = 1; i <= number; i++) {
+                let row = [];
+                for (let j = 0; j < number; j++) {
+                    row[j] = i + j;
+                }
+                soNguyenDuong.push(row);
+            }
+            console.log(soNguyenDuong);
+        }
+    </script>
+</body>
+
+</html>
